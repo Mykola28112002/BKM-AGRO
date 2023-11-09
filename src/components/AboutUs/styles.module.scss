@@ -1,0 +1,83 @@
+
+.aboutUs {
+    border-radius: 34px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 52px 80px 247px 80px;
+    margin-top: 56px;
+    position: relative;
+    .top {
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+    }
+    .bottom {
+        top: 0;
+        position: absolute;
+        right: 100px;
+    }
+    h2 {
+        color: #1E1D1D;
+        font-family: Prosto One;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-bottom: 57px;
+    }
+    .List {
+        position: relative;
+        .Item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            p {
+                color: #000;
+                font-family: Radio Canada;
+                font-size: 24px;
+                font-weight: 600;
+                max-width: 50%;
+                line-height: 100%;
+                
+            }
+        }
+        .ItemLast {
+            bottom: -247px;
+            right: -42px;
+            position: absolute;
+            display: inline-flex;
+            padding: 16px 25px 36px 29px;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 32px 32px 0 0;
+            
+            background: #FF7A32;
+            width: 659px;
+            div {
+                display: flex;
+                gap: 35px;
+                text-align: center;
+                h3 {
+                    color: #FFF;
+                    font-family: Radio Canada;
+                    font-size: 56px;
+                    font-weight: 600;
+                    line-height: 100%;
+                    padding-left: 150px;
+                }
+                .svg {
+                    margin-top: -45px;
+                }
+            }
+            
+            p {
+                color: #000;
+                font-family: Radio Canada;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 100%;
+                margin-top: -15px;
+            }
+        }
+    }
+}

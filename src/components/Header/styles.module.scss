@@ -1,0 +1,22 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    .tellFlex {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-top: 47px;
+        a {
+            color: #FFF;
+            font-family: Radio Canada;
+            font-size: 24px;
+            font-weight: 300;
+            &:hover {
+                color: #FF7A32;
+                font-weight: 700;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

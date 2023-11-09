@@ -1,0 +1,117 @@
+
+.customers {
+    text-align: center;
+    margin-bottom: 112px;
+    font-family: 'Radio Canada';
+    h2 {
+        color: #FFF;
+        font-family: Prosto One;
+        font-size: 60px;
+        font-weight: 400;
+        margin-top: 120px;
+        line-height: 100%;
+    }
+    ul {
+        display: flex;
+        gap: 24px;
+        margin-top: 50px;
+        li {
+            border-radius: 32px;
+            border: 8px solid #FF7A32;
+            background: #F4F3F3;
+            padding: 56px 45px 69px 37px;
+            align-items: center;
+            width: 100%;
+            p {
+                color: #000;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 100%;
+                text-align: left;
+            }
+            .avatarBox {
+                display: flex;
+                gap: 18px;
+                align-items: center;
+                margin-bottom: 24px;
+                .nameBox {
+                    .name {
+                        margin-bottom: 8px;
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        line-height: 100%;
+                    }
+                    .data {
+                        color: #707070;
+                        font-size: 16px;
+                        font-weight: 300;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    .formBox {
+        width: 100%;
+        margin-top: 80px;
+        border-radius: 32px;
+        background: #FFF;
+        padding: 40px 70px 63px 70px;
+        h3 {
+            color: #000;
+            text-align: center;
+            font-family: Prosto One;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 100%;
+            max-width: 1124px;
+            span {
+                background: #FF7A32;
+            }
+        }
+        .formSpan {
+            color: #FF7A32;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-top: 16px;
+            padding-left: 24px;
+            width: 100%;
+            text-align: left;
+            line-height: 100%;
+        }
+        input {
+            width: 100%;
+            padding: 21px 926px 21px 24px;
+            align-items: center;
+            border-radius: 24px;
+            border: 1px solid #000;
+            color: #000;
+            &:last-child {
+                height: 160px;
+            }
+            &:nth-child(n + 4) {
+                margin-top: 16px;
+            }
+            color: #707070;
+            font-size: 22px;
+            font-weight: 300;
+            text-transform: capitalize;
+            
+        }
+        button {
+            display: inline-flex;
+            padding: 26px 50px 25px 51px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 56px;
+            background: #FF7A32;
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 48px;
+        }
+    }
+}

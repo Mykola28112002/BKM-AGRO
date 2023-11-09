@@ -1,0 +1,62 @@
+
+.hero {
+    text-align: center;
+    margin-top: 24px;
+    border-radius: 24px;
+    border: 2px solid #FFF;
+    height: 747px;
+    background-image: linear-gradient(333deg, rgba(0, 0, 0, 0.56) 45.5%, rgba(0, 0, 0, 0.00) 93.19%),
+            url("../../assets/img/heroImg.png");
+    h1 {
+        color: rgba(255, 255, 255, 0.88);
+        font-family: Prosto One;
+        font-size: 120px;
+        font-weight: 400;
+        line-height: 100%;
+        margin-bottom: 32px;
+    }
+    p {
+        color: rgba(255, 255, 255, 0.80);
+        text-align: center;
+        font-family: Radio Canada;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 56px;
+        max-width: 869px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 120%;
+    }
+    button {
+        display: inline-flex;
+        height: 80px;
+        padding: 25px 68px 26px 69px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 56px;
+        background: #FF7A32;
+        color: #FFF;
+        font-family: Radio Canada;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    nav {
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        margin-top: 52px;
+        margin-bottom: 101px;
+        a {
+            color: #FFF;
+            font-family: Radio Canada;
+            font-size: 24px;
+            font-weight: 600;
+            &:hover {
+                color: #FF7A32;
+                font-weight: 700;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

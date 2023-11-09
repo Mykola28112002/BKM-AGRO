@@ -1,0 +1,72 @@
+
+.photo {
+    h2 {
+        color: #FFF;
+        font-family: Prosto One;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: uppercase;
+        margin-top: 70px;
+        margin-bottom: 28px;
+    }
+    h3 {
+        color: #FF7A32;
+        text-align: center;
+        font-family: Radio Canada;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .galery {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        align-items: center;
+        div {
+            .img4 {
+                height: 477px;
+                margin-bottom: 24px;
+            }
+            .img8 {
+                height: 549px;
+                margin-bottom: 24px;
+            }
+            .img7 {
+                height: 371px;
+            }
+
+            .img9 {
+                height: 318px;
+            }
+        }
+        
+       
+        .img5 {
+            height: 769px;
+
+        }
+
+    }
+    .info {
+        margin-top: 56px;
+        border-radius: 32px;
+        background: #FF7A32;
+        padding: 20px 100px;
+        h3 {
+            color: #FFF;
+            font-family: Radio Canada;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 100%;
+        }
+        p {
+            color: #1E1D1D;
+            text-align: center;
+            font-family: Radio Canada;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 100%;
+            margin-top: 10px;
+        }
+    }
+}
