@@ -3,7 +3,8 @@ import css from './styles.module.scss';
 import Avatar1 from '../../assets/img/Avatar1.png';
 import Avatar2 from '../../assets/img/Avatar2.png';
 import Avatar3 from '../../assets/img/Avatar3.png';
-import {MoreHorizontal} from '../../assets/svgComponents/MoreHorizontal';
+import { MoreHorizontal } from '../../assets/svgComponents/MoreHorizontal';
+import ContactForm from './Form';
 
 const user = [
   {
@@ -27,7 +28,7 @@ const user = [
 ]
 
 export const Customers = () => {
-  return <div className={css.customers}>
+  return <div id='article3' className={css.customers}>
     <h2>Що про нас кажуть клієнти?</h2>
     <ul>
       {user.map((a, index) => <li key={index}>
@@ -45,10 +46,11 @@ export const Customers = () => {
     <div className={css.formBox}>
       <h3>У вас є питання? Ми з радістю відповімо на них і допоможемо вам з вибором потрібного обладнання під ваши потреби. Телефонуйте за номером <span>+38 (098) 4359 874 (Василь), +38 (067) 5205 902 (Сергій)</span> або замовте дзвінок. </h3>
       <span className={css.formSpan}>Заповніть форму</span>
-      <input placeholder='Ваше ім’я' type="name" />
+      <ContactForm />
+      {/* <input placeholder='Ваше ім’я' type="name" />
       <input placeholder='Номер телефону' type="number" />
-      <input placeholder='Повідомлення ' type="text" />
-      <button>Замовити дзвінок</button>
+      <input className={css.message} placeholder='Повідомлення ' type="text" /> */}
+      {/* <button>Замовити дзвінок</button> */}
     </div>
   </div>
 }

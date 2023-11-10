@@ -4,11 +4,15 @@ import { Logo } from '../../assets/svgComponents/Logo';
 import css from './styles.module.scss';
 
 export const Header = () => {
-  return <div className={css.header}>
+  return <div id='article1' className={css.header}>
     <div className={css.tellFlex}>
       <Tell />
-      <a href='tel:+3809843559874'>+3809843559874</a>
+      <div>
+        <a href='tel:+380984359874'>+380984359874</a>
+        <a href='tel:+380675205902'>+380675205902</a>
+      </div>
     </div>
+    <h3>Можлива доставка по всій Україні</h3>
     <Logo />
   </div>
 }

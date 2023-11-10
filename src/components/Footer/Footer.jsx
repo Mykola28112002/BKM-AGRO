@@ -5,7 +5,7 @@ import Tiktok from '../../assets/img/tiktok.png';
 import css from './styles.module.scss';
 
 export const Footer = () => {
-  return <div className={css.footer}>
+  return <div id='article4' className={css.footer}>
     <div className={css.footerOne}>
       <Logo />
       <p className={css.text}>Наші технології - Ваш Успіх!</p>
@@ -24,16 +24,16 @@ export const Footer = () => {
       <h3 className={css.navTitle}>Компанія</h3>
       <ul>
         <li>
-          <a href="">Головна</a>
+          <a href="#article1">Головна</a>
         </li>
         <li>
-          <a href="">Про Нас</a>
+          <a href="#article2">Про Нас</a>
         </li>
         <li>
-          <a href="">Відгуки</a>
+          <a href="#article3">Відгуки</a>
         </li>
         <li>
-          <a href="">Контакти</a>
+          <a href="#article4">Контакти</a>
         </li>
       </ul>
     </div>
@@ -41,7 +41,7 @@ export const Footer = () => {
       <h3 className={css.contactTitle}>Контакти:</h3>
       <p className={css.telText}>Телефони для уточнення чи замовлення</p>
       <a href="tel:+380984359874">+38 (098) 4359 874 (Василь)</a>
-      <a href="tel:+380675205902">+38 (067) 5205 902</a>
+      <a href="tel:+380675205902">+38 (067) 5205 902 (Сергій)</a>
       <h3 className={css.adresTitle}>Адреса:</h3>
       <p className={css.adres}>вул. Центральна 25, село Гірники, Ковельський район, Волинська обл.</p>
       <h3 className={css.adresTitle}>Ми працюємо:</h3>
