@@ -1,6 +1,7 @@
 import React from 'react';
 import { AboutUs } from './AboutUs/AboutUs';
 import { Customers } from './Customers/Customers';
+import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
 import { Hero } from './Hero/Hero';
 import { Photo } from './Photo/Photo';
@@ -14,6 +15,7 @@ export const App = () => {
       <AboutUs />
       <Photo />
       <Customers />
+      <Footer />
     </div>
   );
 };
