@@ -28,10 +28,10 @@ export const Hero = () => {
 Надійне  та якісне обладнання для  успіху в сільському господарстві. Зерносушарка мобільна бункерна під будь який  вид палива.</p>
     <button className={css.button} onClick={openModal}>ЗАТЕЛЕФОНУВАТИ</button>
     <div className={css.social}>
-      <a href="">
+      <a href="https://vm.tiktok.com/ZGJoQt3Y1">
         <img src={Tiktok} alt="" />
       </a>
-      <a href="">
+      <a href="https://www.facebook.com/groups/2854771291429687/permalink/3526997707540372/">
         <img src={Facebook} alt="" />
       </a>
     </div>
