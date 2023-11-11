@@ -26,7 +26,7 @@
         font-family: 'Radio Canada';
         font-size: 24px;
         font-weight: 700;
-        @include maxMd {
+        @include maxXxl {
             display: none;
         }
     }
@@ -39,13 +39,13 @@
         display: none;
         line-height: normal;
         margin-top: 24px;
-        @include maxMd {
+        @include maxXxl {
             display: block;
         }
     }
     .mobileGallery {
         display: none;
-        @include maxMd {
+        @include maxXxl {
             display: block;
         }
     }
@@ -54,7 +54,7 @@
         justify-content: space-between;
         gap: 24px;
         align-items: center;
-        @include maxMd {
+        @include maxXxl {
             display: none;
         }
         div {
