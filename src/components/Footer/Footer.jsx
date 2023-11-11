@@ -21,21 +21,31 @@ export const Footer = () => {
       <p className={css.prava}>(c)Твій BKM-AGRO 2023. Всі права захищені</p>
     </div>
     <div className={css.navBox}>
-      <h3 className={css.navTitle}>Компанія</h3>
-      <ul>
-        <li>
-          <a href="#article1">Головна</a>
-        </li>
-        <li>
-          <a href="#article2">Про Нас</a>
-        </li>
-        <li>
-          <a href="#article3">Відгуки</a>
-        </li>
-        <li>
-          <a href="#article4">Контакти</a>
-        </li>
-      </ul>
+      <div className={css.navFlex}>
+        <h3 className={css.navTitle}>Компанія</h3>
+        <ul>
+          <li>
+            <a href="#article1">Головна</a>
+          </li>
+          <li>
+            <a href="#article2">Про Нас</a>
+          </li>
+          <li>
+            <a href="#article3">Відгуки</a>
+          </li>
+          <li>
+            <a href="#article4">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div className={css.socialMobile}>
+        <a href="">
+          <img src={Tiktok} alt="" />
+        </a>
+        <a href="">
+          <img src={Facebook} alt="" />
+        </a>
+      </div>
     </div>
     <div className={css.contactBox}>
       <h3 className={css.contactTitle}>Контакти:</h3>

@@ -26,7 +26,7 @@ export const Hero = () => {
     <h1>Зерносушарки</h1>
     <p>Іноваційна технологія для ефективного сушіння вашого зерна. 
 Надійне  та якісне обладнання для  успіху в сільському господарстві. Зерносушарка мобільна бункерна під будь який  вид палива.</p>
-    <button className={css.button}  onClick={openModal}>ЗАТЕЛЕФОНУВАТИ</button>
+    <button className={css.button} onClick={openModal}>ЗАТЕЛЕФОНУВАТИ</button>
     <div className={css.social}>
       <a href="">
         <img src={Tiktok} alt="" />

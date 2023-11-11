@@ -1,5 +1,6 @@
 // ContactForm.js
 import React, { useState } from 'react';
+import css from './styles.module.scss';
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -40,14 +41,14 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
-            <input placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
-            <textarea placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
+            <input className={css.InputStl} placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
+            <input className={css.InputStl} placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
+            <textarea className={css.InputStl} placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
             <button
                 disabled={diasabled}
                 style={{ opacity: diasabled ? 0.7 : 1 }}
                 type="submit">
-                Замовити дзвінок
+                Відправити
             </button>
         </form>
     );

@@ -1,10 +1,20 @@
+@import "@styles/mixins/index.scss";
 
 .footer {
     padding-bottom: 125px;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    @include maxMd {
+        flex-direction: column;
+        padding-bottom: 38px;
+    }
     .footerOne {
+        @include maxMd {
+            order: 3;
+            padding-top: 80px;
+        }
+        
         .text {
             color: #FFF;
             font-family: 'Radio Canada';
@@ -12,11 +22,17 @@
             font-weight: 500;
             line-height: normal;
             margin-top: 24px;
+            @include maxMd {
+                text-align: center;
+            }
         }
         .social {
             display: flex;
             gap: 24px;
             margin-top: 44px;
+            @include maxMd {
+                display: none;
+            }
         }
         .socialText {
             color: #FFF;
@@ -26,6 +42,9 @@
             line-height: normal;
             margin-top: 24px;
             max-width: 257px;
+            @include maxMd {
+                display: none;
+            }
         }
         .prava {
             color: #F8F1E8;
@@ -34,15 +53,39 @@
             font-weight: 400;
             line-height: normal;
             margin-top: 203px;
+            opacity: 0.8;
+            @include maxMd {
+                text-align: center;
+                margin-top: 24px;
+            }
         }
     }
     .navBox {
         padding-top: 25px;
+        @include maxMd {
+            order: 2;
+            display: flex;
+            .navFlex {
+                margin-right: 57px;
+            }
+        }
+        
+        .socialMobile {
+            gap: 24px;
+            display: none;
+            @include maxMd {
+                display: flex;
+            }
+        }
         ul {
             margin-top: 32px;
             display: flex;
             flex-direction: column;
             gap: 32px;
+            @include maxMd {
+                gap: 16px;
+                margin-top: 24px;
+            }
         }
         .navTitle {
             color: #FF7A32;
@@ -70,6 +113,10 @@
         font-size: 24px;
         font-weight: 600;
         line-height: normal;
+        @include maxMd {
+            order: 1;
+            padding-top: 0;
+        }
         .contactTitle {
             color: #FF7A32;
             font-family: 'Radio Canada';
@@ -84,6 +131,7 @@
             font-weight: 600;
             line-height: normal;
             margin-top: 24px;
+            
         }
         a {
             display: block;

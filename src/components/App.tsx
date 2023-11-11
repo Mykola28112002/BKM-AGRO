@@ -41,9 +41,8 @@ export const App = () => {
         <AboutUs />
         <Photo />
         <Customers />
-        {/* <Footer /> */}
+        <Footer />
       </div>
-      
     </div>
   );
 };
