@@ -7,7 +7,7 @@
     margin-top: 56px;
     position: relative;
     z-index: 1;
-    @include maxMd {
+    @include maxLg {
         border-radius: 16px;
         margin-top: 39px;
         padding: 0;
@@ -21,7 +21,7 @@
         top: 0;
         position: absolute;
         right: 100px;
-        @include maxMd {
+        @include maxLg {
             right: 36px;
             width: 26px;
             height: 112px;
@@ -35,7 +35,7 @@
         line-height: 100%;
         text-transform: uppercase;
         margin-bottom: 57px;
-        @include maxMd {
+        @include maxLg {
             font-size: 38px;
             padding-top: 40px;
             padding-left: 16px;
@@ -44,7 +44,7 @@
     }
     .List {
         position: relative;
-        @include maxMd {
+        @include maxLg {
             display: flex;
             flex-direction: column;
             gap: 24px;
@@ -54,13 +54,13 @@
             align-items: center;
             justify-content: space-between;
             gap: 30px;
-            @include maxMd {
+            @include maxLg {
                 flex-direction: row-reverse;
                 flex-direction: column;
                 gap: 24px;
             }
             img {
-                @include maxMd {
+                @include maxLg {
                     order: 2;
                 }
             }
@@ -71,7 +71,7 @@
                 font-weight: 600;
                 max-width: 50%;
                 line-height: 100%;
-                @include maxMd {
+                @include maxLg {
                     order: 1;
                     font-size: 24px;
                     font-weight: 500;
@@ -93,7 +93,7 @@
             
             background: #FF7A32;
             width: 659px;
-            @include maxMd {
+            @include maxLg {
                 border-radius: 16px 16px 0 0;
                 width: 95%;
                 position: static;
@@ -105,7 +105,7 @@
                 display: flex;
                 gap: 30px;
                 text-align: center;
-                @include maxMd {
+                @include maxLg {
                     gap: 10px;
                     width: 100%;
                     justify-content: space-between
@@ -117,14 +117,14 @@
                     font-weight: 600;
                     line-height: 100%;
                     padding-left: 120px;
-                    @include maxMd {
+                    @include maxLg {
                         padding-left: 0;
                         font-size: 24px;
                     }
                 }
                 .svg {
                     margin-top: -45px;
-                    @include maxMd {
+                    @include maxLg {
                         width: 80px;
                         height: 80px;
                         margin-top: -30px;
@@ -139,7 +139,7 @@
                 font-weight: 600;
                 line-height: 100%;
                 margin-top: -15px;
-                @include maxMd {
+                @include maxLg {
                     font-size: 18px;
                     font-weight: 500;
                 }
