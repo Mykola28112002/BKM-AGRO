@@ -35,10 +35,10 @@ export const App = () => {
     <div className={css.app}>
       <Header />
       <Hero />
-      <AboutUs />
+      {/* <AboutUs />
       <Photo />
       <Customers />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
