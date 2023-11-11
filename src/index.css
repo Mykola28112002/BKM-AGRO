@@ -14,3 +14,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Для WebKit (Chrome, Safari) */
+*::-webkit-scrollbar {
+  width: 6px; /* товщина вертикальної полоси */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent; /* колір полоси прокрутки */
+  border-radius: 16px; /* радіус закруглення */
+}

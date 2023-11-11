@@ -1,20 +1,33 @@
+@import "@styles/mixins/index.scss";
 
 .customers {
     text-align: center;
     margin-bottom: 112px;
     font-family: 'Radio Canada';
+    @include maxMd {
+        margin-bottom: 40px;
+    }
     h2 {
         color: #FFF;
-        font-family: Prosto One;
+        font-family: 'Prosto One';
         font-size: 60px;
         font-weight: 400;
         margin-top: 120px;
         line-height: 100%;
+        @include maxMd {
+            margin-top: 40px;
+            font-size: 38px;
+            text-align: left;
+        }
     }
     ul {
         display: flex;
         gap: 24px;
         margin-top: 50px;
+        @include maxMd {
+            margin-top: 24px;
+            flex-direction: column;
+        }
         li {
             border-radius: 32px;
             border: 8px solid #FF7A32;
@@ -22,6 +35,10 @@
             padding: 56px 45px 69px 37px;
             align-items: center;
             width: 100%;
+            @include maxMd {
+                border-radius: 16px;
+                padding: 40px 16px;
+            }
             p {
                 color: #000;
                 font-size: 16px;
@@ -59,16 +76,24 @@
         border-radius: 32px;
         background: #FFF;
         padding: 40px 70px 63px 70px;
+        @include maxMd {
+            border-radius: 16px;
+            padding: 24px 10px;
+            margin-top: 56px;
+        }
         h3 {
             color: #000;
             text-align: center;
-            font-family: Prosto One;
+            font-family: 'Prosto One';
             font-size: 28px;
             font-weight: 400;
             line-height: 100%;
             max-width: 1124px;
             span {
                 background: #FF7A32;
+            }
+            @include maxMd {
+                font-size: 16px;
             }
         }
         .formSpan {
@@ -81,37 +106,60 @@
             width: 100%;
             text-align: left;
             line-height: 100%;
+            @include maxMd {
+                font-size: 14px;
+                padding-left: 0px;
+                margin-bottom: 8px;
+            }
         }
-        input {
+        form {
             width: 100%;
-            padding: 21px 926px 21px 24px;
-            align-items: center;
-            border-radius: 24px;
-            border: 1px solid #000;
-            color: #000;
-            &:last-child {
+            display: flex;
+            flex-direction: column;
+            input {
+                margin-bottom: 16px;
+            }
+            .InputStl,
+            textarea {
+                width: 100%;
+                padding: 21px 26px 21px 26px;
+                align-items: center;
+                border-radius: 24px;
+                border: 1px solid #000;
+                color: #707070;
+                font-size: 22px;
+                font-weight: 300;
+                text-transform: capitalize;
+                @include maxMd {
+                    padding: 18px 16px 18px 16px;
+                    width: 100%;
+                    border-radius: 16px;
+                    font-size: 16px;
+                }
+            }
+            textarea {
                 height: 160px;
             }
-            &:nth-child(n + 4) {
-                margin-top: 16px;
+            button {
+                display: inline-flex;
+                padding: 26px 50px 25px 51px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 56px;
+                background: #FF7A32;
+                color: #FFF;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 48px;
+                @include maxMd {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
             }
-            color: #707070;
-            font-size: 22px;
-            font-weight: 300;
-            text-transform: capitalize;
-            
+
         }
-        button {
-            display: inline-flex;
-            padding: 26px 50px 25px 51px;
-            justify-content: center;
-            align-items: center;
-            border-radius: 56px;
-            background: #FF7A32;
-            color: #FFF;
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 48px;
-        }
+        
+        
     }
 }
