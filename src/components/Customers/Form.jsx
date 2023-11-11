@@ -40,19 +40,15 @@ const ContactForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
-                <input placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
-            </label>
-            <label>
-                <input placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
-            </label>
-            <label>
-                <textarea placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
-            </label>
+            <input placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
+            <input placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
+            <textarea placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
             <button
                 disabled={diasabled}
                 style={{ opacity: diasabled ? 0.7 : 1 }}
-                type="submit">Замовити дзвінок</button>
+                type="submit">
+                Замовити дзвінок
+            </button>
         </form>
     );
 };

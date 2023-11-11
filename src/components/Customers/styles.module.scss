@@ -1,3 +1,4 @@
+@import "@styles/mixins/index.scss";
 
 .customers {
     text-align: center;
@@ -10,11 +11,20 @@
         font-weight: 400;
         margin-top: 120px;
         line-height: 100%;
+        @include maxMd {
+            margin-top: 40px;
+            font-size: 38px;
+            text-align: left;
+        }
     }
     ul {
         display: flex;
         gap: 24px;
         margin-top: 50px;
+        @include maxMd {
+            margin-top: 24px;
+            flex-direction: column;
+        }
         li {
             border-radius: 32px;
             border: 8px solid #FF7A32;
@@ -22,6 +32,10 @@
             padding: 56px 45px 69px 37px;
             align-items: center;
             width: 100%;
+            @include maxMd {
+                border-radius: 16px;
+                padding: 40px 16px;
+            }
             p {
                 color: #000;
                 font-size: 16px;
@@ -59,6 +73,11 @@
         border-radius: 32px;
         background: #FFF;
         padding: 40px 70px 63px 70px;
+        @include maxMd {
+            border-radius: 16px;
+            padding: 24px 10px;
+            margin-top: 56px;
+        }
         h3 {
             color: #000;
             text-align: center;
@@ -69,6 +88,9 @@
             max-width: 1124px;
             span {
                 background: #FF7A32;
+            }
+            @include maxMd {
+                font-size: 16px;
             }
         }
         .formSpan {
@@ -81,8 +103,14 @@
             width: 100%;
             text-align: left;
             line-height: 100%;
+            @include maxMd {
+                font-size: 14px;
+                padding-left: 0px;
+                margin-bottom: 8px;
+            }
         }
         form {
+            width: 100%;
             input {
                 margin-bottom: 16px;
             }
@@ -97,6 +125,9 @@
                 font-size: 22px;
                 font-weight: 300;
                 text-transform: capitalize;
+                @include maxMd {
+                    width: 50vw;
+                }
             }
             textarea {
                 height: 160px;

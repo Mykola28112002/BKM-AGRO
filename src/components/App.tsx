@@ -33,12 +33,17 @@ export const App = () => {
 });
   return (
     <div className={css.app}>
-      <Header />
-      <Hero />
-      {/* <AboutUs />
-      <Photo />
-      <Customers />
-      <Footer /> */}
+      <div className={css.heroBg}>
+        <Header />
+        <Hero />
+      </div>
+      <div className={css.container}>
+        <AboutUs />
+        <Photo />
+        <Customers />
+        {/* <Footer /> */}
+      </div>
+      
     </div>
   );
 };
