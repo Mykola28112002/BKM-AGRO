@@ -7,6 +7,8 @@ import { Check } from '../../assets/svgComponents/Check';
 
 const ContactForm = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [NameError, setNameError] = useState('');
+    const [NumberError, setNumberError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -17,10 +19,25 @@ const ContactForm = () => {
 
     const handleChange = (e) => {
         const { name, value } = e.target;
+        console.log(NameError)
+        if (formData.value.length <= 0) { 
+            setDiasabled(true)
+            setNumberError('Введіть номер телефону!!!')
+        } else {
+            if (/^[0-9]+$/.test(value) && value.length >= 10) {
+                setDiasabled(false)
+                setNumberError('')
+            } else {
+                setDiasabled(true)
+                setNumberError('Невірний номер телефону!!!')
+            } 
+        }
         if (formData.name.length <= 0) { 
             setDiasabled(true)
+            setNameError("Введіть ім'я!!!")
         } else {
             setDiasabled(false)
+            setNumberError('')
         }
         setFormData({
         ...formData,
@@ -70,7 +87,9 @@ const ContactForm = () => {
                 </div>
             }
             <input className={css.InputStl} placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
+            {/* {NameError.length > 0 && <p className={css.errorTexName}>{NameError}</p>} */}
             <input className={css.InputStl} placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
+            {/* {NumberError.length > 0 && <p className={css.errorTexNum}>{NumberError}</p>} */}
             <textarea className={css.InputStl} placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
             <button
                 className={css.submitBtn}
