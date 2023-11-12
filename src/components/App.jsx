@@ -4,6 +4,7 @@ import { Customers } from './Customers/Customers';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
 import { Hero } from './Hero/Hero';
+import { Info } from './Info/Info';
 import { Photo } from './Photo/Photo';
 import css from './styles.module.scss';
 
@@ -39,6 +40,9 @@ export const App = () => {
       </div>
       <div className={css.container}>
         <AboutUs />
+      </div>
+      <Info />
+      <div className={css.container}>
         <Photo />
         <Customers />
         <Footer />

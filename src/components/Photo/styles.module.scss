@@ -1,7 +1,7 @@
 @import "@styles/mixins/index.scss";
 
 .photo {
-    margin-top: 70px;
+    margin-top: 120px;
     @include maxMd {
         margin-top: 56px;
         
@@ -87,6 +87,7 @@
         border-radius: 32px;
         background: #FF7A32;
         padding: 20px 100px;
+        text-align: center;
         @include maxMd {
             margin-top: 24px;
             padding: 20px;

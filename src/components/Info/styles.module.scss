@@ -1,0 +1,55 @@
+@import "@styles/mixins/index.scss";
+
+.info {
+    margin-top: 120px;
+    @include maxLg {
+        margin-top: 56px;
+    }
+    h2 {
+        color: #FEFEFE;
+        font-family: 'Prosto One';
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        @include maxLg {
+            font-size: 24px;
+            padding-left: 16px;
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 47px;
+        @include maxLg {
+            margin-top: 24px;
+            gap: 0;
+        }
+        li {
+            padding: 10px 18px;
+            p {
+                color: #FFF;
+                font-family: 'Radio Canada';
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include maxLg {
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+            @include maxLg {
+                padding: 16px;
+            }
+            &:nth-child(2n + 1) {
+                border-radius: 16px;
+                background: #FF7A32;
+                @include maxLg {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
