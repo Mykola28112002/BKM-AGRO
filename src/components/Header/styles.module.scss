@@ -1,4 +1,4 @@
-@import "@styles/mixins/index.scss";
+@import "../../styles/breakpoints.scss";
 
 .header {
     display: flex;
@@ -19,7 +19,7 @@
             gap: 8px;
             padding: 25px 30px;
             align-items: flex-start;
-            width: 100%;
+            width: 85%;
             justify-content: space-between;
         }
         .headerBox {

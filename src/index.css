@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0 80px;
+  padding: 0;
   background: #1E1D1D;
 }
 
@@ -27,4 +27,51 @@ body {
 *::-webkit-scrollbar-thumb {
   background-color: transparent; /* колір полоси прокрутки */
   border-radius: 16px; /* радіус закруглення */
+}
+
+/* Знімаємо стилі для всіх заголовків h1-h6 */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Знімаємо стилі для списків */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Знімаємо стилі для всіх тегів p */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Знімаємо стилі для всіх тегів a */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Знімаємо стилі для тега body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Знімаємо стилі для тега button */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
 }

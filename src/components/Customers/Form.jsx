@@ -1,5 +1,5 @@
 // ContactForm.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import css from './styles.module.scss';
 import emailjs from '@emailjs/browser';
 import Modal from '../Modal/Modal';
@@ -7,6 +7,8 @@ import { Check } from '../../assets/svgComponents/Check';
 
 const ContactForm = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [NameError, setNameError] = useState('');
+    const [NumberError, setNumberError] = useState('');
     const [isLoading, setIsLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -15,13 +17,36 @@ const ContactForm = () => {
     });
     const [diasabled, setDiasabled] = useState(true);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
+    useEffect(() => {
         if (formData.name.length <= 0) { 
             setDiasabled(true)
+            setNameError("Введіть ім'я!!!")
         } else {
-            setDiasabled(false)
+            setNameError('')
         }
+        if (formData.phoneNumber.length <= 0) { 
+            setDiasabled(true)
+            setNumberError('Введіть номер телефону!!!')
+        } else {            
+            if (/^[0-9]+$/.test(formData.phoneNumber) && formData.phoneNumber.length >= 10 && formData.phoneNumber.length <= 12) {
+                if (formData.name.length <= 0) { 
+                    setDiasabled(true)
+                    setNameError("Введіть ім'я!!!")
+                } else {
+                    setDiasabled(false)
+                    setNameError('')
+                }
+                setNumberError('')
+            } else {
+                setDiasabled(true)
+                setNumberError('Невірний номер телефону!!!')
+            } 
+        }
+
+    }, [formData])
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
         setFormData({
         ...formData,
         [name]: value,
@@ -31,15 +56,11 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsLoading(true)
-        if (formData.name.length <= 0) {
-            console.log('!!!!!!!!!!!!!!!!');
-        } else {
-            setFormData({
-                name: '',
-                phoneNumber: '',
-                message: '',
-            });
-        }
+        setFormData({
+            name: '',
+            phoneNumber: '',
+            message: '',
+        });
         const serviceId = 'service_y545qpg';
         const templateId = 'template_58mac2i';
         const userId = '685QO5Je5D_QH2K8C';
@@ -69,7 +90,9 @@ const ContactForm = () => {
                     <div className={css.loader}></div>
                 </div>
             }
+            {NameError.length > 0 && <p className={css.errorTexName}>{NameError}</p>}
             <input className={css.InputStl} placeholder='Ваше ім’я' type="text" name="name" value={formData.name} onChange={handleChange} />
+            {NumberError.length > 0 && <p className={css.errorTexName}>{NumberError}</p>}
             <input className={css.InputStl} placeholder='Номер телефону' type="number" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
             <textarea className={css.InputStl} placeholder='Повідомлення ' name="message" value={formData.message} onChange={handleChange} />
             <button
