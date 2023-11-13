@@ -1,7 +1,7 @@
 
 import css from './styles.module.scss';
 import img1 from '../../assets/img/img1.png';
-import img2 from '../../assets/img/img2.png';
+import img2 from '../../assets/img/image.png';
 import img3 from '../../assets/img/img3.png';
 import { Check } from '../../assets/svgComponents/Check';
 import { DecorBottom } from '../../assets/svgComponents/DecorBottom';
