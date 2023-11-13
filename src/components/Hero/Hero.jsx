@@ -17,6 +17,16 @@ export const Hero = () => {
   };
 
   return <section className={css.hero}>
+    <div className={css.b1}>
+    </div>
+    <div className={css.b2}>
+    </div>
+    <div className={css.b3}>
+    </div>
+    <div className={css.b4}>
+    </div>
+    <div className={css.a1}></div>
+    <div className={css.a2}></div>
     <nav>
       <a href="#article1">Головна</a>
       <a href="#article2">Про Нас</a>

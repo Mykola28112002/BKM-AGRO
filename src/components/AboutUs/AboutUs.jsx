@@ -10,7 +10,8 @@ import { DecorTop } from '../../assets/svgComponents/DecorTop';
 export const AboutUs = () => {
   return <section id='article2' className={css.aboutUs}>
     <div className={css.top}>
-      <DecorTop  />
+      <DecorTop />
+      
     </div>
     <div className={css.bottom}>
       <DecorBottom  />

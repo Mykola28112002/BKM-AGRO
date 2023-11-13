@@ -81,6 +81,11 @@
             padding: 24px 10px;
             margin-top: 56px;
         }
+        br {
+            @include maxMd {
+                display: none;
+            }
+        }
         h3 {
             color: #000;
             text-align: center;

@@ -6,6 +6,7 @@
     border-radius: 24px;
     border: 2px solid #FFF;
     height: 747px;
+    position: relative;
     background-image: linear-gradient(333deg, rgba(0, 0, 0, 0.56) 45.5%, rgba(0, 0, 0, 0.00) 93.19%),
             url("../../assets/img/heroImg.png");
     @include maxLg {
@@ -13,6 +14,76 @@
         margin-top: 0;
         background-image: none;
         border-radius: 16px;
+    }
+    .a1 {
+        width: 3px;
+        height: 410px;
+        left: -3px;
+        top: 165px;
+        position: absolute;
+        background: #020204;
+        @include maxLg {
+            display: none;
+        }
+    }
+    .a2 {
+        width: 3px;
+        height: 410px;
+        right: -3px;
+        top: 165px;
+        position: absolute;
+        background: #020204;
+        @include maxLg {
+            display: none;
+        }
+    }
+    .b1 {
+        width: 10px;
+        height: 10px;
+        left: 20px;
+        top: 20px;
+        position: absolute;
+        background: #D9D9D9;
+        border-radius: 9999px;
+        @include maxLg {
+            display: none;
+        }
+    }
+    .b2 {
+        width: 10px;
+        height: 10px;
+        left: 20px;
+        bottom: 20px;
+        position: absolute;
+        background: #D9D9D9;
+        border-radius: 9999px;
+        @include maxLg {
+            display: none;
+        }
+    }
+    .b3 {
+        width: 10px;
+        height: 10px;
+        right: 20px;
+        top: 20px;
+        position: absolute;
+        background: #D9D9D9;
+        border-radius: 9999px;
+        @include maxLg {
+            display: none;
+        }
+    }
+    .b4 {
+        width: 10px;
+        height: 10px;
+        right: 20px;
+        bottom: 20px;
+        position: absolute;
+        background: #D9D9D9;
+        border-radius: 9999px;
+        @include maxLg {
+            display: none;
+        }
     }
     h1 {
         color: rgba(255, 255, 255, 0.88);
@@ -71,6 +142,7 @@
         @include maxLg {
             display: none;
         }
+      
         a {
             color: #FFF;
             font-family: 'Radio Canada';
