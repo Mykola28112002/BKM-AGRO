@@ -24,7 +24,9 @@
         @include maxLg {
             right: 36px;
             width: 26px;
-            height: 112px;
+            svg {
+                height: 100px;
+            }
         }
     }
     h2 {
