@@ -6,6 +6,7 @@
     @include maxLg {
         flex-direction: column;
         position: absolute;
+        z-index: 50;
         align-items: center;
         width: 100%;
         right: 0;
