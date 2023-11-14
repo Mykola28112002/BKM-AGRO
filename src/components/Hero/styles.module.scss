@@ -91,7 +91,7 @@
         font-size: 120px;
         font-weight: 400;
         line-height: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 40px;
         @include maxLg {
             font-size: 40px;
             padding-top: 250px;
@@ -103,7 +103,7 @@
         font-family: 'Radio Canada';
         font-size: 24px;
         font-weight: 600;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
         max-width: 869px;
         margin-left: auto;
         margin-right: auto;
@@ -159,7 +159,7 @@
         display: flex;
         justify-content: center;
         gap: 56px;
-        margin-top: 100px;
+        margin-top: 70px;
         @include maxLg {
             margin-top: 40px;
             gap: 26px;
@@ -168,8 +168,8 @@
     .socialText {
         color: #FFF;
         font-family: 'Radio Canada';
-        font-size: 16px;
-        font-weight: 300;
+        font-size: 20px;
+        font-weight: 600;
         line-height: normal;
         margin-top: 16px;
         margin-bottom: 0;

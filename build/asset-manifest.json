@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BKM-AGRO/static/css/main.93c12b97.css",
-    "main.js": "/BKM-AGRO/static/js/main.4a9e7105.js",
+    "main.css": "/BKM-AGRO/static/css/main.657ea780.css",
+    "main.js": "/BKM-AGRO/static/js/main.8917e85e.js",
     "static/media/heroImg.png": "/BKM-AGRO/static/media/heroImg.cc8d6b02976419ef67b0.png",
     "static/media/img5.png": "/BKM-AGRO/static/media/img5.228ca2c3cac64215d623.png",
     "static/media/HeroMobile.png": "/BKM-AGRO/static/media/HeroMobile.8019f297ffaf6b351120.png",
@@ -13,11 +13,11 @@
     "static/media/img1.png": "/BKM-AGRO/static/media/img1.3ade0286f02caa4c3d23.png",
     "static/media/img7.png": "/BKM-AGRO/static/media/img7.bb04360baf71a6a395f8.png",
     "index.html": "/BKM-AGRO/index.html",
-    "main.93c12b97.css.map": "/BKM-AGRO/static/css/main.93c12b97.css.map",
-    "main.4a9e7105.js.map": "/BKM-AGRO/static/js/main.4a9e7105.js.map"
+    "main.657ea780.css.map": "/BKM-AGRO/static/css/main.657ea780.css.map",
+    "main.8917e85e.js.map": "/BKM-AGRO/static/js/main.8917e85e.js.map"
   },
   "entrypoints": [
-    "static/css/main.93c12b97.css",
-    "static/js/main.4a9e7105.js"
+    "static/css/main.657ea780.css",
+    "static/js/main.8917e85e.js"
   ]
 }

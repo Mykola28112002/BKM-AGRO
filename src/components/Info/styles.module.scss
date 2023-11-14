@@ -20,11 +20,9 @@
     ul {
         display: flex;
         flex-direction: column;
-        gap: 24px;
         margin-top: 47px;
         @include maxLg {
             margin-top: 24px;
-            gap: 0;
         }
         li {
             padding: 10px 18px;
@@ -42,13 +40,6 @@
             }
             @include maxLg {
                 padding: 16px;
-            }
-            &:nth-child(2n + 1) {
-                border-radius: 16px;
-                background: #FF7A32;
-                @include maxLg {
-                    border-radius: 0;
-                }
             }
         }
     }
