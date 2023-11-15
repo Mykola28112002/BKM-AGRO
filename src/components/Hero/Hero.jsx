@@ -38,10 +38,10 @@ export const Hero = () => {
     <button className={css.button} onClick={openModal}>ЗАТЕЛЕФОНУВАТИ</button>
     <div className={css.social}>
       <a href="https://vm.tiktok.com/ZGJoQt3Y1">
-        <img src={Tiktok} alt="" />
+        <img src={Tiktok} alt="photo" />
       </a>
       <a href="https://www.facebook.com/groups/2854771291429687/permalink/3526997707540372/">
-        <img src={Facebook} alt="" />
+        <img src={Facebook} alt="photo" />
       </a>
     </div>
     <p className={css.socialText}>Переглядайте відео нашої роботи та відгуки в соцмережах.</p>

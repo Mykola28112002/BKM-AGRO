@@ -1,8 +1,6 @@
 
 import css from './styles.module.scss';
-import img1 from '../../assets/img/img1.png';
-import img2 from '../../assets/img/image.png';
-import img3 from '../../assets/img/img3.png';
+import {aboutUs} from '../../constants/index';
 import { Check } from '../../assets/svgComponents/Check';
 import { DecorBottom } from '../../assets/svgComponents/DecorBottom';
 import { DecorTop } from '../../assets/svgComponents/DecorTop';
@@ -19,15 +17,15 @@ export const AboutUs = () => {
     <h2>Про нас</h2>
     <ul className={css.List}>
       <li className={css.Item}> 
-        <img src={img1} alt={img1} />
+        <img src={aboutUs[0]} alt="photo" />
         <p>Наша компанія є  виробником сучасних бункерних зерносушарок, які ефективні та універсальністю. Ми розробляємо та виготовляємо сушарки, які працюють з будь-яким видом палива, забезпечуючи бездоганне сушіння різних культур зерна.</p>
       </li>
       <li className={css.Item}> 
         <p>Наш асортимент включає в себе різні моделі зерносушарок з вмісткістю від 5 до 12 тонн, щоб задовольнити потреби різних сільськогосподарських підприємств. Також доступна самовигрузка та самозагрузка. Зерносушарка не піддається корозії. Що робить нашу продукцію ще більш привабливою, так це можливість індивідуального замовлення та комплектації сушарок за вашими потребами.</p>
-        <img src={img2} alt={img2} />
+        <img src={aboutUs[1]} alt="photo" />
       </li>
       <li className={css.Item}> 
-        <img src={img3} alt={img3} />
+        <img src={aboutUs[2]} alt="photo" />
         <p>Ми пропонуємо різноманітні опції, включаючи ворошіловку, об'єм обробки, потужні вентилятори та системи аспірації. Наші зерносушарки є найкращим рішенням для тих, хто прагне забезпечити якісне сушіння будь-яких видів зерна та культур. Надійність, ефективність та індивідуальний підхід - ось наша гарантія вашого успіху у сільському господарстві.</p>
       </li>
       <li className={css.ItemLast}> 
