@@ -102,6 +102,7 @@
             }
         }
         .formSpan {
+            display: block;
             color: #FF7A32;
             font-size: 22px;
             font-weight: 600;
@@ -114,7 +115,6 @@
             @include maxMd {
                 font-size: 14px;
                 padding-left: 0px;
-                margin-bottom: 8px;
             }
         }
         form {
