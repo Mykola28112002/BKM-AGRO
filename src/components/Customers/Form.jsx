@@ -6,6 +6,9 @@ import Modal from '../Modal/Modal';
 import { Check } from '../../assets/svgComponents/Check';
 
 const ContactForm = () => {
+    const serviceId = 'service_s2r4k9z';
+    const templateId = 'template_58mac2i';
+    const userId = '685QO5Je5D_QH2K8C';
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [NameError, setNameError] = useState('');
     const [NumberError, setNumberError] = useState('');
@@ -61,16 +64,13 @@ const ContactForm = () => {
             phoneNumber: '',
             message: '',
         });
-        const serviceId = 'service_y545qpg';
-        const templateId = 'template_58mac2i';
-        const userId = '685QO5Je5D_QH2K8C';
+        
 
         const smsData = {
             name: formData.name,
             number: formData.phoneNumber,
             message: formData.message,
         };
-
         emailjs.send(serviceId, templateId, smsData, userId)
             .then((response) => {
                 console.log('SMS sent successfully:', response.status);
