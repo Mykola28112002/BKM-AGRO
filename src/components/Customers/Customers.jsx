@@ -11,7 +11,7 @@ export const Customers = () => {
     <ul>
       {user.map((a, index) => <li key={index}>
         <div className={css.avatarBox}>
-          <img src={a.img} alt="photo" />
+          <img src={a.img} alt="dghdj" />
           <div className={css.nameBox}>
             <p className={css.name}>{a.name}</p>
             <p className={css.data}>{a.data}</p>

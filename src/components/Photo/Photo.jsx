@@ -11,13 +11,13 @@ export const Photo = () => {
     <h3 className={css.delivery}>Можлива доставка по всій Україні</h3>
     <div className={css.galery}>
       <div>
-        <img className={css.img4} src={images[0].original} alt="photo" />
-        <img className={css.img7} src={images[2].original} alt="photo" />
+        <img className={css.img4} src={images[0].original} alt="phfdgoto" />
+        <img className={css.img7} src={images[2].original} alt="phfdhoto" />
       </div>
-      <img className={css.img5} src={images[1].original} alt="photo" />
+      <img className={css.img5} src={images[1].original} alt="phsfgshoto" />
       <div>
-        <img className={css.img8} src={images[3].original} alt="photo" />
-        <img className={css.img9} src={images[4].original} alt="photo" />
+        <img className={css.img8} src={images[3].original} alt="phshfdfoto" />
+        <img className={css.img9} src={images[4].original} alt="phdhoto" />
       </div>
     </div>
     <div className={css.mobileGallery}>

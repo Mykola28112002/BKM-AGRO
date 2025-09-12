@@ -11,10 +11,10 @@ export const Footer = () => {
       <p className={css.text}>Наші технології - Ваш Успіх!</p>
       <div className={css.social}>
         <a href="https://vm.tiktok.com/ZGJoQt3Y1">
-          <img src={Tiktok} alt="photo" />
+          <img src={Tiktok} alt="gjty" />
         </a>
         <a href="https://www.facebook.com/groups/2854771291429687/permalink/3526997707540372/">
-          <img src={Facebook} alt="photo" />
+          <img src={Facebook} alt="phytyoto" />
         </a>
       </div>
       <p className={css.socialText}>Слідкуйте за нами в соцмережах щоб дізнаватися про новини.</p>
@@ -40,10 +40,10 @@ export const Footer = () => {
       </div>
       <div className={css.socialMobile}>
         <a href="https://vm.tiktok.com/ZGJoQt3Y1">
-          <img src={Tiktok} alt="photo" />
+          <img src={Tiktok} alt="fgh" />
         </a>
         <a href="https://www.facebook.com/groups/2854771291429687/permalink/3526997707540372/">
-          <img src={Facebook} alt="photo" />
+          <img src={Facebook} alt="phtrtroto" />
         </a>
       </div>
     </div>
