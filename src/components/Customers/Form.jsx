@@ -58,6 +58,23 @@ const ContactForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+       
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+            'send_to': 'AW-11418107860/ZJTFCCOIzvEbTYoKEQw',
+            'value': 1.0,
+            'currency': 'UAH',
+            });
+        } else {
+            // Альтернативна реалізація без глобального gtag
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { window.dataLayer.push(arguments); }
+            gtag('event', 'conversion', {
+            'send_to': 'AW-11418107860/ZJTFCCOIzvEbTYoKEQw',
+            'value': 1.0,
+            'currency': 'UAH',
+            });
+        }
         setIsLoading(true)
         setFormData({
             name: '',
